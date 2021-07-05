@@ -1,0 +1,169 @@
+{
+	"info": {
+		"_postman_id": "817cb745-e29e-4675-aa02-6cb2341063a3",
+		"name": "SpringDataJPA-Test1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Sessions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Speakers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/speakers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"speakers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Speaker_Get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/speakers/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"speakers",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Session_Get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/sessions/93",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"sessions",
+						"93"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Session_Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"session_name\" : \"New Session\",\n    \"session_description\" : \"New Session desc\",\n    \"session_length\" : 30\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/sessions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"sessions"
+					]
+				},
+				"description": "Create a new session"
+			},
+			"response": []
+		},
+		{
+			"name": "session_update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"session_name\" : \"Updated Session 3\",\n    \"session_description\" : \"Updated Session desc 3\",\n    \"session_length\" : 46\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/sessions/93",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"sessions",
+						"93"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "session_delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/sessions/98",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"sessions",
+						"98"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
